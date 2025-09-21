@@ -1,0 +1,346 @@
+{
+	"info": {
+		"_postman_id": "36a637ab-2c77-43da-97f4-0932251b92c2",
+		"name": "managment_system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31135980"
+	},
+	"item": [
+		{
+			"name": "employee",
+			"item": [
+				{
+					"name": "signUp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"nationalId\":\"987654\",\r\n  \"fullName\":\"yasser\" ,\r\n  \"password\":\"y1234\",\r\n  \"country\": \"Egypt\",\r\n  \"department\":\"asdf\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/employee/signUp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employee",
+								"signUp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"nationalId\":\"12345789\",\r\n  \"fullName\":\"farah sherif\" ,\r\n  \"password\":\"f1234\",\r\n  \"country\": \"Egypt\",\r\n  \"department\":\"asdf\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/employee/getAllEmployees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employee",
+								"getAllEmployees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getEmployee",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"nationalId\":\"12345789\",\r\n  \"fullName\":\"farah sherif\" ,\r\n  \"password\":\"f1234\",\r\n  \"country\": \"Egypt\",\r\n  \"department\":\"asdf\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/employee/68b8196c9cadd43e80bc0fa7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employee",
+								"68b8196c9cadd43e80bc0fa7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "hamadaeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGI4MmVkOWU2ZWQ3ZDZlMGFiYTM4MjgiLCJuYXRpb25hbElkIjoiMTIzNDU2IiwiaWF0IjoxNzU2OTAxMjk4LCJleHAiOjE3NTY5MDQ4OTh9.6Kfdha_4U36PDKZCkP6KGyFPepahCuOf-Om_qQt5LqM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nationalId\":\"987654\",\r\n\r\n\r\n  \"password\":\"yy1234\",\r\n\r\n  \"department\":\"tech\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/employee/updateEmployee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employee",
+								"updateEmployee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logIn",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"nationalId\":\"123456\"\r\n \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/employee/logIn",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"employee",
+								"logIn"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "task",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "hamadaeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGI4MmVkOWU2ZWQ3ZDZlMGFiYTM4MjgiLCJuYXRpb25hbElkIjoiMTIzNDU2IiwiaWF0IjoxNzU2OTA2MjM4LCJleHAiOjE3NTY5MDk4Mzh9.58J6hvI9Hyy7WT8H97nNJBITvWVikY6Mi3eQWRACWis",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\":\"creat api\",\r\n  \"description\":\"create crud for empo\",\r\n  \"assignedToId\":\"68b82ef7e6ed7d6e0aba382c\"\r\n  \r\n  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/task/createTask",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"task",
+								"createTask"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllTasks",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "hamadaeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGI4MmVkOWU2ZWQ3ZDZlMGFiYTM4MjgiLCJuYXRpb25hbElkIjoiMTIzNDU2IiwiaWF0IjoxNzU2OTA2MjM4LCJleHAiOjE3NTY5MDk4Mzh9.58J6hvI9Hyy7WT8H97nNJBITvWVikY6Mi3eQWRACWis",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\":\"creat api\",\r\n  \"description\":\"create crud for empo\",\r\n  \"assignedToId\":\"68b82ef7e6ed7d6e0aba382c\"\r\n  \r\n  \r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/task/getAllTasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"task",
+								"getAllTasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "hamadaeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGI4MmVkOWU2ZWQ3ZDZlMGFiYTM4MjgiLCJuYXRpb25hbElkIjoiMTIzNDU2IiwiaWF0IjoxNzU2OTA2MjM4LCJleHAiOjE3NTY5MDk4Mzh9.58J6hvI9Hyy7WT8H97nNJBITvWVikY6Mi3eQWRACWis",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"taskId\":\"68b844b9f07b284cd3a1f661\"\r\n  \r\n  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/task/getById",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"task",
+								"getById"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "hamadaeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGI4MmVkOWU2ZWQ3ZDZlMGFiYTM4MjgiLCJuYXRpb25hbElkIjoiMTIzNDU2IiwiaWF0IjoxNzU2OTA2MjM4LCJleHAiOjE3NTY5MDk4Mzh9.58J6hvI9Hyy7WT8H97nNJBITvWVikY6Mi3eQWRACWis",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"taskId\":\"68b844b9f07b284cd3a1f661\",\r\n  \"title\":\"API\"\r\n  \r\n  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/task/updateTask",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"task",
+								"updateTask"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request Copy",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "hamadaeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGI4MmVkOWU2ZWQ3ZDZlMGFiYTM4MjgiLCJuYXRpb25hbElkIjoiMTIzNDU2IiwiaWF0IjoxNzU2OTA2MjM4LCJleHAiOjE3NTY5MDk4Mzh9.58J6hvI9Hyy7WT8H97nNJBITvWVikY6Mi3eQWRACWis",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"taskId\":\"68b844b9f07b284cd3a1f661\"\r\n  \r\n  \r\n  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/task/deleteTask",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"task",
+								"deleteTask"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

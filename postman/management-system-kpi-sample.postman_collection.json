@@ -1,0 +1,194 @@
+{
+  "info": {
+    "_postman_id": "kpi-sample-collection-id",
+    "name": "Management System KPI APIs Sample",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Efficiency KPI",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "Authorization", "value": "Bearer <your_token_here>" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"employeeId\": \"<employee_id>\",\n  \"day\": 3,\n  \"month\": 9,\n  \"year\": 2025\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/efficiencyKPI/create",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["efficiencyKPI", "create"]
+        }
+      }
+    },
+    {
+      "name": "Get All Efficiency KPIs",
+      "request": {
+        "method": "GET",
+        "header": [
+          { "key": "Authorization", "value": "Bearer <your_token_here>" }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/efficiencyKPI/all",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["efficiencyKPI", "all"]
+        }
+      }
+    },
+    {
+      "name": "Create Engagement KPI",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "Authorization", "value": "Bearer <your_token_here>" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"employeeId\": \"<employee_id>\",\n  \"day\": 3,\n  \"month\": 9,\n  \"year\": 2025,\n  \"attendanceRate\": 95,\n  \"meetingParticipation\": 5,\n  \"collaborationScore\": 8\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/engagementKPI/create",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["engagementKPI", "create"]
+        }
+      }
+    },
+    {
+      "name": "Get All Engagement KPIs",
+      "request": {
+        "method": "GET",
+        "header": [
+          { "key": "Authorization", "value": "Bearer <your_token_here>" }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/engagementKPI/all",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["engagementKPI", "all"]
+        }
+      }
+    },
+    {
+      "name": "Create Financial KPI",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "Authorization", "value": "Bearer <your_token_here>" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"employeeId\": \"<employee_id>\",\n  \"day\": 3,\n  \"month\": 9,\n  \"year\": 2025,\n  \"revenuePerEmployee\": 10000,\n  \"costEffectiveness\": 85\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/financialKPI/create",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["financialKPI", "create"]
+        }
+      }
+    },
+    {
+      "name": "Get All Financial KPIs",
+      "request": {
+        "method": "GET",
+        "header": [
+          { "key": "Authorization", "value": "Bearer <your_token_here>" }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/financialKPI/all",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["financialKPI", "all"]
+        }
+      }
+    },
+    {
+      "name": "Create Productivity KPI",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "Authorization", "value": "Bearer <your_token_here>" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"employeeId\": \"<employee_id>\",\n  \"day\": 3,\n  \"month\": 9,\n  \"year\": 2025\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/productivityKPI/create",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["productivityKPI", "create"]
+        }
+      }
+    },
+    {
+      "name": "Get All Productivity KPIs",
+      "request": {
+        "method": "GET",
+        "header": [
+          { "key": "Authorization", "value": "Bearer <your_token_here>" }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/productivityKPI/all",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["productivityKPI", "all"]
+        }
+      }
+    },
+    {
+      "name": "Create Quality KPI",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "Authorization", "value": "Bearer <your_token_here>" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"employeeId\": \"<employee_id>\",\n  \"day\": 3,\n  \"month\": 9,\n  \"year\": 2025\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/qualityKPI/create",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["qualityKPI", "create"]
+        }
+      }
+    },
+    {
+      "name": "Get All Quality KPIs",
+      "request": {
+        "method": "GET",
+        "header": [
+          { "key": "Authorization", "value": "Bearer <your_token_here>" }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/qualityKPI/all",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["qualityKPI", "all"]
+        }
+      }
+    }
+  ]
+}
